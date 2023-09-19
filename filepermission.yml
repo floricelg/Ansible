@@ -1,0 +1,9 @@
+---
+- name: Change file permissions
+  hosts: all
+  
+  tasks:
+  - name: Files Permissions
+    file:
+     path: /tmp/fisierdecopiat
+     mode: a+w+x 

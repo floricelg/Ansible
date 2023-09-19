@@ -1,0 +1,15 @@
+---
+- name: Playbook for shell script
+  hosts: all
+  
+  tasks:
+  - name: Run shell script
+    cron:
+      name: This job is scheduled by Ansible
+      minute: 0
+      hour: "*"
+      day: "*"
+      month: "*" 
+      weekday: 4
+      user: root
+      job: /home/flori/cfile.sh
